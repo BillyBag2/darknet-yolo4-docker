@@ -18,7 +18,10 @@ RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y git python3-opencv libopencv-dev nano wget
 RUN DEBIAN_FRONTEND=noninteractive cd ~ && git clone https://github.com/AlexeyAB/darknet.git
 
-# This was the HEAD commit at time of writing. Remove/change for updates.
+# darknet commit
+# --------------
+# 0faed3e60e52f742bbef43b83f6be51dd30f373e was the HEAD commit at time of writing.
+# Remove/change for latest/specific version of darknet.
 RUN DEBIAN_FRONTEND=noninteractive cd ~/darknet && git checkout 0faed3e60e52f742bbef43b83f6be51dd30f373e
 
 # Replace Makefile.
