@@ -1,1 +1,1 @@
-docker run -it --rm billybag2/darknet-yolo4:latest
+docker run -it --rm -v `pwd`/test:/test --gpus all billybag2/darknet-yolo4:latest

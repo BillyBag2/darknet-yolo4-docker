@@ -1,0 +1,1 @@
+docker run --rm -v `pwd`/test:/test --gpus all billybag2/darknet-yolo4 /bin/sh -c "/test/runtest.sh"
