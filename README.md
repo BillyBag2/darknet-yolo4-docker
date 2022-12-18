@@ -5,7 +5,7 @@ This repository contains a Dockerfile to create container to support nVidia acce
 ## Status
 
 * GPU inference test runs on a docker host with ansingle nVidia K80.
-* Training is untested.
+* GPU training runs.
 * At time of writing Cuda 11.4.1 used. Compute range 3.5 - 8.6. See: "FROM" in [Dockerfile](docker/Dockerfile)
 * darknet pinned at a specific commit in [Dockerfile](docker/Dockerfile)
 
@@ -23,4 +23,5 @@ See: [Dockerfile](docker/Dockerfile)
 
 * Add first lines to scripts.
 * Add training test.
-
+* Add support for nVidia P4
+* Add support for infurence on a none accelerated platform, eg cloud VM?
